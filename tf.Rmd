@@ -1,5 +1,5 @@
 ---
-title: "Cómo hacer un TFG/TFM"
+title: "Cómo hacer un TFG/TFM en informática"
 author: "JJ Merelo"
 date: "1/9/2020"
 output: html_document
@@ -10,7 +10,18 @@ bibliography: TF.bib
 
 Tanto en los tribunales de trabajos fin de grado o máster (TFG/TFM, a partir de ahora sólo TF) en los que he participado me encuentro repitiendo, una y otra vez, las mismas reglas sobre lo que son o no son tanto los trabajos en sí, como la tutorización, como las presentaciones. El trasfondo es que, realmente, parece que nadie tiene claro lo que es o lo que debe de ser. En la mayor parte de los casos es irrelevante: los tribunales son soberanos, y la nota que va a obtener tiene poca relación no sólo con el trabajo realizado o su calidad, sino también con TFs de similar nivel corregidos en otros tribunales.
 
-En todo caso, la nota obtenida es, en la mayor parte de los casos, irrelevante. Un TF es una asignatura, y cómo tal debería servir para que el estudiante aprenda; si, como debería ser, el trabajo es liberado [@porqueliberar], es un muestrario de las técnicas y habilidades que el estudiante ha 
+En todo caso, la nota obtenida es, en la mayor parte de los casos, irrelevante. Un TF es una asignatura, y cómo tal debería servir para que el estudiante aprenda; si, como debería ser, el trabajo es liberado [@porqueliberar], es un muestrario de las técnicas y habilidades que el estudiante ha sido capaz de desarrollar a lo largo del grado.
+
+> Dejemos de lado si ha sido capaz de desarrollarlas *en* él o *a pesar de* o *aparte de* él. Si es muestrario de habilidades, de dónde procedan esas habilidades es totalmente secundario.
+
+Por eso voy a tratar de dar una serie de reglas para poder aprovechar, efectivamente, 
+este grado para crecer en la ingeniería que se ha elegido y convertirse en mejor profesional. Dirigido principalmente al estudiante, pero también a quién le toque ser tutor o tutora de este tipo de trabajos.
+
+En todo esto, soy totalmente consciente de que, en la mayor parte de los casos, un TF es un trámite molesto que necesitas para poder acceder a un grado que necesitas, sobre todo, por el título que conlleva, no por los conocimientos que te impartan. Muchos estudiantes están ya trabajando a tiempo parcial o completo y sin el grado simplemente no pueden acceder a los convenios laborales o puestos mejor remunerados. El TF lo tienen que compatibilizar con este trabajo y lo que se desea es quitárselo de enmedio lo antes posible, sin que represente una gran cantidad de trabajo.
+
+Por eso, lo que voy a contar trata de *no* aportar carga de trabajo adicional; en muchos casos incluso puede ayudar a tener el trabajo más enfocado y dirigido desde el principio, y a permitir organizarse el trabajo mejor para trabajar con regularidad y llegar al final más rápidamente y, sobre todo, con más eficiencia en las horas invertidas y también en el retorno de la inversión de esas horas. En todo caso, no es absolutista y no representa un camino zen de perfección: toma las reglas que te convengan o te parezcan más razonables, y deja el resto.
+
+Este trabajo, además, es libre y está en un repositorio. Cópialo y adáptalo para entregarlo a tus tutorizados, o si crees que hay algún error o quieres aportar algo a esta copia, hazlo también. Encantado revisaré el PR y lo añadiré a la versión publicada, que actualizaré a continuació.
 
 
 ## References
