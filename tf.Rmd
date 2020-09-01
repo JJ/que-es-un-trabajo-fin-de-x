@@ -1,0 +1,16 @@
+---
+title: "Cómo hacer un TFG/TFM"
+author: "JJ Merelo"
+date: "1/9/2020"
+output: html_document
+bibliography: TF.bib
+---
+
+# Motivación
+
+Tanto en los tribunales de trabajos fin de grado o máster (TFG/TFM, a partir de ahora sólo TF) en los que he participado me encuentro repitiendo, una y otra vez, las mismas reglas sobre lo que son o no son tanto los trabajos en sí, como la tutorización, como las presentaciones. El trasfondo es que, realmente, parece que nadie tiene claro lo que es o lo que debe de ser. En la mayor parte de los casos es irrelevante: los tribunales son soberanos, y la nota que va a obtener tiene poca relación no sólo con el trabajo realizado o su calidad, sino también con TFs de similar nivel corregidos en otros tribunales.
+
+En todo caso, la nota obtenida es, en la mayor parte de los casos, irrelevante. Un TF es una asignatura, y cómo tal debería servir para que el estudiante aprenda; si, como debería ser, el trabajo es liberado [@porqueliberar], es un muestrario de las técnicas y habilidades que el estudiante ha 
+
+
+## References
