@@ -21,7 +21,30 @@ En todo esto, soy totalmente consciente de que, en la mayor parte de los casos, 
 
 Por eso, lo que voy a contar trata de *no* aportar carga de trabajo adicional; en muchos casos incluso puede ayudar a tener el trabajo más enfocado y dirigido desde el principio, y a permitir organizarse el trabajo mejor para trabajar con regularidad y llegar al final más rápidamente y, sobre todo, con más eficiencia en las horas invertidas y también en el retorno de la inversión de esas horas. En todo caso, no es absolutista y no representa un camino zen de perfección: toma las reglas que te convengan o te parezcan más razonables, y deja el resto.
 
-Este trabajo, además, es libre y está en un repositorio. Cópialo y adáptalo para entregarlo a tus tutorizados, o si crees que hay algún error o quieres aportar algo a esta copia, hazlo también. Encantado revisaré el PR y lo añadiré a la versión publicada, que actualizaré a continuació.
+Este trabajo, además, es libre y está en un repositorio. Cópialo y adáptalo para entregarlo a tus tutorizados, o si crees que hay algún error o quieres aportar algo a esta copia, hazlo también. Encantado revisaré el PR y lo añadiré a la versión publicada, que actualizaré a continuación.
 
+Como cualquier TF, debemos empezar por el 
+
+## estado del arte
+
+No he encontrado demasiadas guías prácticas sobre cómo afrontar el TF. Hay trabajos, como [@rodriguez2012como], que hacen una panorámica de qué tipo de trabajos recogen los reglamentos de TFG de diferentes universidades. El libro de García Sanz y Martínez Clares [@sanz2012guia] promete ser una guía práctica, pero es quizás demasiado genérico (y extenso) para poder usarse de forma práctica; no está mal, sin embargo, consultarlo antes de ponerse a trabajar. Alier et al. [@alier2012preguntas] proponen una estructuración del trabajo en tres hitos (lo que es un poco escaso para trabajos informáticos) y una serie de preguntas para cada uno de ellos, del estilo de "¿Existe una planificación del trabajo a realizar?". Puede ayudar sobre todo al tutor, pero desde luego no ayuda al estudiante a hacer dicha planificación o cómo enfocarla. Por último, la guía práctica de Monferrer y otros [@monferrer2012trabajo] puede ayudar a centrar el desarrollo inicial de un trabajo, pero es un poco demasiado genérica para ser de ayuda a estudiantes de informática. 
+
+El problema, muchas veces, es que el estudiante realmente no tiene conocimientos (porque su grado no se ha molestado en impartírselo) para *tener* un proyecto y llevarlo a cabo. Así que vamos al principio, qué es un proyecto y cómo plantearlo.
+
+## Un TF es la solución a un problema usando medios informáticos.
+
+Es decir, en un TF, sea de "investigación" o de cualquier otro tipo (dejemos de lado los llamados "de revisión", que en general son para salir del paso y reflejan muy poco las habilidades adquiridas por el estudiante en una ingeniería), tienes que resolver un problema. El problema debe ser tan real como sea posible, y debe expresarse en términos cuantitativos si lo admite. Por ejemplo
+
+* Saber qué personas con dispositivos móviles pasan por un lugar determinado, o por varios lugares, y qué tiempo pasan ahí.
+
+Ese problema puede plantearse en varios contextos; por ejemplo, saber si vuelven y cuanto vuelven o contar cuantas personas hay, por temas de aforo (relacionado con el COVID19 o cualquier otra razón). En ese sentido, volvemos a hacer énfasis en que deben ser problemas *reales*, al menos lo más reales posibles. Sería bastante fatuo decir que se va a resolver el problema del COVID, sin embargo un subproblema sí se puede resolver, y por medios informáticos.
+
+En este sentido, *no* sería un problema lo siguiente
+
+* Construir un dispositivo que capte MACs de Bluetooth y WiFi.
+
+Y no lo es principalmente porque no dice qué problema va a resolver. 
+
+Saber qué problema se va a resolver es esencial. Del problema surge la motivación, pero también los casos de uso, es decir, las diferentes situaciones en las que diferentes tipos de usuarios interaccionarán con la solución propuesta para resolver, en ese caso, su problema. En el primer caso, las posibles aplicaciones o el problema que uno tenga en mente serán casos de uso, y de esa forma se tendrán que crear, adicionalmente, lógica de negocio para presentar esa información, o para almacenarla y procesarla. En el segundo caso no hay casos de uso. Se construye el dispositivo. Capta las MACs. Ya está. ¿Dónde se guardan esas MAC? ¿Se tienen que guardar o no?
 
 ## References
