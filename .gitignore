@@ -40,3 +40,5 @@ vignettes/*.pdf
 
 .html
 *~
+
+auto/
