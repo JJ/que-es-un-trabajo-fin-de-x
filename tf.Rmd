@@ -92,6 +92,30 @@ En este capítulo debe ponerse la motivación, los objetivos generales, los subo
 
 En un capítulo tendrán que ir todos los casos de uso. En general, todo las restricciones que hay (por el negocio al que se aplique, por ejemplo) y por supuesto los casos de uso, qué es lo que queremos que el sistema resuelva. Por supuesto, estos casos de uso tendrán que estar relacionados con los objetivos; por eso es conveniente escribir a la vez que se trabaja: podemos encontrarnos que los casos de uso van más allá (en cuyo caso habrá que modificarlos) y o más acá (en cuyo caso, también, claro). Lo más importante es que cada capítulo forma parte de una misma narrativa, y los RFs no pueden estar "en el aire", sin tener ningún tipo de relación con los objetivos. Estos casos de uso deben referirse explícitamente a los objetivos, y de hecho tienen que ser anteriores a los mismos, por lo que dentro de ellos tendrá que explicarse claramente por qué. Y la motivación puede ser implícita o explícita: un caso de uso puede haber generado un objetivo.
 
+### Metodología
 
+Una vez que sepas, aunque sea inicialmente, qué vas a hacer, necesitas ponerte, efectivamente, a hacerlo. Puede que no tengas todos los requisitos al principio, pero al menos tendrás los primeros o sabrás por dónde tienes que empezar. Hoy en día la mayoría de los proyectos usan metodologías ágiles basadas en SCRUM. Te pillas una historia de usuario, y la conviertes en una serie de hitos (o *milestones*) que hay que ir alcanzando antes de tener la historia de usuario completa. Por ejemplo, vamos al proyecto anterior. Una historia de usuario puede ser algo como "El usuario debe de recibir información sobre las personas que hay en el recinto de su interés".
+
+> La historia de usuario es expresamente vaga. Si dices "voy a crear una página web que tenga el número de personas en el recinto" excluyes muchas formas posibles de interacción, desde un bot de Telegram (al que se le pregunte) hasta enviarlo a una cuenta de Twitter. Por eso los objetivos no deben ser nunca el producto que vas a desarrollar; es algo que tiene que decidirse en función de los requisitos funcionales (y de otro tipo)
+
+De ahí saldrán un montón de productos intermedios. Pero en la parte más bajas de los mismos tendrá que estar el hito de "Captar los paquetes BT y almacenarlos transitoriamente en una estructura de datos". Ese puede ser el hito inicial. Un hito tiene que describir un producto concreto, un producto mínimamente viable sobre el que se pueda construir. En este caso, una clase o módulo que se conecte con el hardware (que se habrá decidido o elegido en otro hito) y tenga un API del que se pueda obtener ese resultado.
+
+> Sobre esto, un proyecto va a ser siempre construir una serie de capas de abstracción. El diseño de una aplicación es algo a lo que no se presta suficiente atención, ni yo voy a hacerlo aquí. Pero no es algo directo, y merece la pena que se pare uno un poco a la hora de hacerlo.
+
+En cualquier caso, hay que hacer un *sprint* para llevar a cabo el hito, y durante el mismo, tomar una serie de decisiones sobre el diseño, bibliotecas externas que se van a usar, etcétera. Todo debe ir bien anotado (los mensajes de commit pueden servir para eso), porque nos va a servir en el siguiente capítulo.
+
+### Estado del arte y diseño
+
+En los trabajos científicos, el estado del arte es una parte esencial e independiente. Se trata de saber cómo está el panorama en el problema que se trate de resolver. Por ejemplo, en el caso que nos ocupa, tendremos un montón de placas, conocidas o no, con HATs o lo que sea que pueden ser capaces de captar tramas de Bluetooth o WiFi. Cada una de ellas tendrá sus méritos y sus deméritos.
+
+Pero esta sección de la memoria no es para que se muestre que has sido capaz de buscar por internet y copiar con más o menos fortuna una hoja de especificaciones, muchas de las cuales pueden venir, o no, a cuento. Se trata de que conoces las opciones que tienes a la hora de resolver un problema y que has escogido la mejor dados tus requisitos.
+
+Por ejemplo, **no** debes hacer esto
+
+* Capítulo que se llame "nanoordenadores y accesorios de los mismos", con imágenes (sin atribuirlas correctamente) y tablas diversas. A continuación, en Diseño "He escogido una Raspi porque tenía una que me tocó en un barril de Ariel". 
+
+No. Se trata de que ya sabes cuales son tus requisitos, de los cuales hemos resaltado el coste (pero podía ser también velocidad de procesamiento). *Teniendo en cuenta* tus requisitos, puedes hacer una tabla (o contarlo) de todo lo que hay en el *estado del arte* que lo cumpla. Y finalmente, en el *diseño*, optas por el que te dé mejores prestaciones en algún aspecto que *tienes también que haber decidido de antemano*.
+
+Y el estado del arte (y diseño) se debe extender a todo, tanto lo que esté en el proyecto como lo que hayas usado; en algunas cosas te lo puedes saltar (por ejemplo, el editor), pero en general, que muestres conocimiento de herramientas de desarrollo, de implementación y de despliegue es lo que se busca en un TF.
 
 ## References
