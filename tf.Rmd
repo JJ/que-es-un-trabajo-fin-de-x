@@ -74,7 +74,24 @@ Por varias razones. Un objetivo siempre tiene que estar en el dominio del proble
 
 * Desarrollar un script de ansible que instale todas las aplicaciones que usamos ahora.
 
-Un objetivo *nunca* debe incluir la solución al mismo; es algo que se debe de alcanzar, y justificar, durante el desarrollo de un proyecto. Y nunca debe ser una tarea cerrada. Un TF siempre debe resolver un problema (o parte del mismo), no hacer una tarea.
+Un objetivo *nunca* debe incluir una solución al problema si se alcanza el mismo; es algo que se debe de alcanzar, y justificar, durante el desarrollo de un proyecto. Y nunca debe ser una tarea cerrada. Un TF siempre debe resolver un problema (o parte del mismo), no hacer una tarea.
+
+## El TF y la memoria
+
+Un TF es un trabajo, claro, pero se evalúa mediante una memoria, que debemos asumir que van a leer, porque aunque es muy probable que no se lea completa, sí pueden leer (o tratar de leer) precisametne la parte que está mal escrita o la que falta; el tutor sí debe leerse al menos una parte considerable, o la estructura de la misma.
+
+> Ojo: no se debe pretender, en general, que el tutor sela lea y corrija los puntos y comas, y menos si se presenta completa unos días antes de la presentación. En general, el tutor establecerá líneas generales u objectivos que la memoria debe cumplir (no tener faltas de ortografía, por ejemplo); quien la escriba debe asegurarse de que se cumplen.
+
+Trabajo y memoria deben de ir unidos, en general. No suele suceder así, y esto es un error, pero lo mejor es que se considere la memoria como documentación del trabajo hecho para el TF y parte integral del mismo, no algo que hay que escribir al final para entregarlo y quitarse el tema de encima. Por eso es muy conveniente (d)escribir el trabajo según se vaya haciendo. Porque además, esas fases del trabajo corresponderán también a las diferentes secciones de una memoria.
+
+### Introducción
+
+En este capítulo debe ponerse la motivación, los objetivos generales, los subobjetivos, y describirse claramente el problema que se trata de resolver y todo lo que contribuya a entender el contexto. Si es parte del trabajo en la empresa, esto es lo que se debe describir, si está ya funcionando, también, si es un trabajo de investigación, por qué se ha elegido hacer ese trabajo específico de investigación. También se explicará el resto de la memoria, su estructura, e info adicional: en qué repositorio está, por ejemplo, o si los datos del trabajo se han publicado en algún lugar.
+
+### Requisitos funcionales
+
+En un capítulo tendrán que ir todos los casos de uso. En general, todo las restricciones que hay (por el negocio al que se aplique, por ejemplo) y por supuesto los casos de uso, qué es lo que queremos que el sistema resuelva. Por supuesto, estos casos de uso tendrán que estar relacionados con los objetivos; por eso es conveniente escribir a la vez que se trabaja: podemos encontrarnos que los casos de uso van más allá (en cuyo caso habrá que modificarlos) y o más acá (en cuyo caso, también, claro). Lo más importante es que cada capítulo forma parte de una misma narrativa, y los RFs no pueden estar "en el aire", sin tener ningún tipo de relación con los objetivos. Estos casos de uso deben referirse explícitamente a los objetivos, y de hecho tienen que ser anteriores a los mismos, por lo que dentro de ellos tendrá que explicarse claramente por qué. Y la motivación puede ser implícita o explícita: un caso de uso puede haber generado un objetivo.
+
 
 
 ## References
