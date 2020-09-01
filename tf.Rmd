@@ -47,4 +47,34 @@ Y no lo es principalmente porque no dice qué problema va a resolver.
 
 Saber qué problema se va a resolver es esencial. Del problema surge la motivación, pero también los casos de uso, es decir, las diferentes situaciones en las que diferentes tipos de usuarios interaccionarán con la solución propuesta para resolver, en ese caso, su problema. En el primer caso, las posibles aplicaciones o el problema que uno tenga en mente serán casos de uso, y de esa forma se tendrán que crear, adicionalmente, lógica de negocio para presentar esa información, o para almacenarla y procesarla. En el segundo caso no hay casos de uso. Se construye el dispositivo. Capta las MACs. Ya está. ¿Dónde se guardan esas MAC? ¿Se tienen que guardar o no?
 
+En esto de puede ayudar la técnica del Design Thinking [@steinbeck2011design]. Recuerda que siempre es mejor, y va a ser para ti más interesante, que resuelvas *tu* problema que el que te lleguen con una solución ya hecha que ni siquiera se te haya ocurrido a ti. A partir de aquí, ya puedes pasar a la siguiente fase.
+
+## Objetivos de un TF
+
+Un TFG tiene que culminar en una memoria, que rara vez se lee alguien, pero que tiene que estar ahí; sobre todo si lo has liberado (recuerda, *debes* liberarlo) va a quedar como una parte aprovechable que permitirá, a quien continúe o use ese proyecto, entender por qué ha llegado a ese estado y qué se puede hacer para que evolucione o se adapte a un contexto determinado.
+
+La memoria suele empezar con los objetivos; no siempre es así, pero así debería ser. El primer capítulo debe empezar por la motivación ("Se necesita un sistema de medición automática del aforo y de la duración de la estancia de una persona en un recinto cerrado"), pero a continuación, se deben experesar cuales son los objetivos del trabajo, es decir, qué parte de ese problema vamos a dejar resuelta y cuál se va a dejar como trabajo futuro.
+
+Un sistema tal como ese puede tener muchos componentes. Por ejemplo, puede que sea un sólo local en cuyo caso la solución será relativamente fácil. Pero puede ser un local con muchas estancias; o pueden ser muchos locales separados físicamente. Los objetivos deben estar claros, porque de los objetivos saldrán los casos de uso (una vez más, los casos de uso son muy importantes) y de los casos de uso los hitos y tareas para resolverlos. Por ejemplo, puede ser el siguiente objetivo
+
+* Crear un sistema que se pueda conectar a un sistema informático existente y que sea capaz de contar el número total de personas en un local así como tiempo de permanencia, con el sistema costando menos de 30€ en total.
+
+Los objetivos deben ser alcanzables, y en lo posible cuantitativos. En este caso, nos hemos comprometido a que valga menos de 30€ (lo que puede excluir, por ejemplo, equipos del tipo Raspi). Pero en subobjetivos se puede ir más allá. 
+
+* Subobjetivos
+    * Debe ser capaz de contar en recintos de x metros cuadrados.
+    * Debe contar el número de personas con una resolución de 5 minutos.
+
+En el primer caso, va a ser totalmente diferente la solución dependiendo de la dimensión del recinto; el segundo nos va a dar un límite en la capacidad de procesamiento del sistema. Que en este caso es amplia, pero puede ser de 1 segundo, en cuyo caso habrá que componérselas. 
+
+**No** será un objetivo
+* Construir un dispositivo basado en una raspberry pi que capte WiFi y Bluetooth
+
+Por varias razones. Un objetivo siempre tiene que estar en el dominio del problema, o en un contexto de negocio. Si el problema, por ejemplo, es automatizar los procesos de desarrollo de una empresa que provee soluciones de gestión de contenidos, un objetivo podrá ser "Crear configuraciones repetibles que funcionen con una sola orden" o "reducir el tiempo de despliegue de desarrollo a 5 minutos" o "Poder adaptar soluciones existentes a una nueva solución con una semana-persona". El objetivo **no será nunca**
+
+* Desarrollar un script de ansible que instale todas las aplicaciones que usamos ahora.
+
+Un objetivo *nunca* debe incluir la solución al mismo; es algo que se debe de alcanzar, y justificar, durante el desarrollo de un proyecto. Y nunca debe ser una tarea cerrada. Un TF siempre debe resolver un problema (o parte del mismo), no hacer una tarea.
+
+
 ## References
