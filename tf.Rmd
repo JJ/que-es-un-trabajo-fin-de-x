@@ -104,6 +104,14 @@ De ahí saldrán un montón de productos intermedios. Pero en la parte más baja
 
 En cualquier caso, hay que hacer un *sprint* para llevar a cabo el hito, y durante el mismo, tomar una serie de decisiones sobre el diseño, bibliotecas externas que se van a usar, etcétera. Todo debe ir bien anotado (los mensajes de commit pueden servir para eso), porque nos va a servir en el siguiente capítulo.
 
+Por otro lado, es imprescindible que uses git para desarrollar el proyecto; por un lado, porque es lo que se usa en la empresa, por otro lado, porque te permitirá documentat en línea el código, y referirte a issues y demás. Y porque GitHub o GitLab son verdaderos sitios de trabajo en grupo, donde puedes (si el tutor/a quiere) interaccionar con el resto de las personas implicadas; puedes solicitar reviews de lo|as tutore|as o ellos te pueden poner issues para que corrijas algún aspecto del mismo. Estos issues pueden estar fuera de un hito, pero tú puedes añadirlos al mismo (o crear uno que sea producto final o algo así). El hecho de que esté en un issue te permitirá controlar más fácilmente la interacción y consecución del mismo.
+
+En la metodología tendrás que incluir (porque se evalúa) como se ha hecho el control de calidad del producto. En general, debes usar tests desde abajo (funcionales) hasta arriba (integración, y todos los issues se deben cerrar con un test que permita asegurarse de que ese issue no va a volver a aparecer; una vez terminado código + tests se cierra el issue desde un commit.
+
+> Lo que no quiere decir que se use un sólo commit para todo un issue. Puede haber uno o muchos; en el mensaje de commit se puede aclarar cómo se avanza para cerrar ese issue.
+
+Todo el proyecto debe estar bien engarzado: los requisitos deben aparecer en milestones, los issues deben estar bien enmarcados y avanzar un hito concreto, y cada vez que se cierre un hito se puede hacer un release. Pero con todo esto podrás avanzar fácilmente tanto en el proyecto como en la memoria, que al fin y al cabo es la descripción de lo que has hecho en el mismo.
+
 ### Estado del arte y diseño
 
 En los trabajos científicos, el estado del arte es una parte esencial e independiente. Se trata de saber cómo está el panorama en el problema que se trate de resolver. Por ejemplo, en el caso que nos ocupa, tendremos un montón de placas, conocidas o no, con HATs o lo que sea que pueden ser capaces de captar tramas de Bluetooth o WiFi. Cada una de ellas tendrá sus méritos y sus deméritos.
@@ -117,5 +125,7 @@ Por ejemplo, **no** debes hacer esto
 No. Se trata de que ya sabes cuales son tus requisitos, de los cuales hemos resaltado el coste (pero podía ser también velocidad de procesamiento). *Teniendo en cuenta* tus requisitos, puedes hacer una tabla (o contarlo) de todo lo que hay en el *estado del arte* que lo cumpla. Y finalmente, en el *diseño*, optas por el que te dé mejores prestaciones en algún aspecto que *tienes también que haber decidido de antemano*.
 
 Y el estado del arte (y diseño) se debe extender a todo, tanto lo que esté en el proyecto como lo que hayas usado; en algunas cosas te lo puedes saltar (por ejemplo, el editor), pero en general, que muestres conocimiento de herramientas de desarrollo, de implementación y de despliegue es lo que se busca en un TF.
+
+
 
 ## References
