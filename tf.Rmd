@@ -86,6 +86,12 @@ Un TF es un trabajo, claro, pero se evalúa mediante una memoria, que debemos as
 
 Trabajo y memoria deben de ir unidos, en general. No suele suceder así, y esto es un error, pero lo mejor es que se considere la memoria como documentación del trabajo hecho para el TF y parte integral del mismo, no algo que hay que escribir al final para entregarlo y quitarse el tema de encima. Por eso es muy conveniente (d)escribir el trabajo según se vaya haciendo. Porque además, esas fases del trabajo corresponderán también a las diferentes secciones de una memoria.
 
+### Usa LaTeX en la memoria
+
+Usa un sistema de proceso de textos profesional en vez de un procesador de textos comercial. Hay [plantillas para memorias](https://github.com/gregoriorobles/plantilla-memoria) o [memorias liberadas](https://github.com/ncordon/undergraduate-dissertation), como la de de Nacho Cordón enlazada, o [esta plantilla que yo mismo he creado](https://github.com/JJ/plantilla-TFG-ETSIIT). GitHub (y GitLab) te permite hacer tests a todo lo que se mueva, úsalo también para comprobar la ortografía. Finalmente, la gestión de la bibliografía es mucho más fácil en LaTeX, así que todo son ventajas.
+
+Recuerda, finalmente, que en un repositorio no puede ir ningún fichero generado. Si quieres publicar el PDF, crea un release; es decir, añade un *tag* al repositorio y usa GitHub para subir el PDF.
+
 ### Introducción
 
 En este capítulo debe ponerse la motivación, los objetivos generales, los subobjetivos, y describirse claramente el problema que se trata de resolver y todo lo que contribuya a entender el contexto. Si es parte del trabajo en la empresa, esto es lo que se debe describir, si está ya funcionando, también, si es un trabajo de investigación, por qué se ha elegido hacer ese trabajo específico de investigación. También se explicará el resto de la memoria, su estructura, e info adicional: en qué repositorio está, por ejemplo, o si los datos del trabajo se han publicado en algún lugar.
@@ -129,6 +135,7 @@ Por ejemplo, **no** debes hacer esto
 No. Se trata de que ya sabes cuales son tus requisitos, de los cuales hemos resaltado el coste (pero podía ser también velocidad de procesamiento). *Teniendo en cuenta* tus requisitos, puedes hacer una tabla (o contarlo) de todo lo que hay en el *estado del arte* que lo cumpla. Y finalmente, en el *diseño*, optas por el que te dé mejores prestaciones en algún aspecto que *tienes también que haber decidido de antemano*.
 
 Y el estado del arte (y diseño) se debe extender a todo, tanto lo que esté en el proyecto como lo que hayas usado; en algunas cosas te lo puedes saltar (por ejemplo, el editor), pero en general, que muestres conocimiento de herramientas de desarrollo, de implementación y de despliegue es lo que se busca en un TF.
+
 
 
 
