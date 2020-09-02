@@ -2,7 +2,10 @@
 title: "Cómo llevar a término un TFG/TFM en informática"
 author: "JJ Merelo"
 date: "1/9/2020"
-output: html_document
+output:
+  html_document: default
+  pdf_document:
+    latex_engine: xelatex
 bibliography: TF.bib
 ---
 
@@ -187,5 +190,10 @@ Aunque me había propuesto hacer una pequeño artículo sobre este tema, finalme
 
 El último punto, por supuesto, es lo más importante. Buena suerte.
 
+## Licencia
+
+Este trabajo tiene licencia [cc-by-sa](https://creativecommons.org/licenses/by-sa/3.0/es/), así que puedes modificarlo o
+compartirlo siempre que menciones el autor original y compartas de la
+misma forma.
 
 ## References
