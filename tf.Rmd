@@ -144,7 +144,9 @@ Y una vez que los tests pasen, el proyecto se puede *desplegar* es decir, pasar 
 
 Los tiempos en los que se copiaban ficheros en un zip a un hosting terminaron en los 90; los tiempos en que se descargaba de un repositorio de código y se empezaban a ejecutar cosas escritas en un post-it (o en un documento de instalación) en 2010 más o menos. Conoce y aprende el concepto de despliegue (para lo que te puede venir bien la asignatura [infraestructura virtual](https://jj.github.io/IV)) y ponlo en práctica en tu TF.
 
+### Costes
 
+Como un proyecto de ingeniería que es, se deben estimar los costes del mismo, en dos vertientes: costes de desarrollo, y costes de producción. ¿Cuanto tiempo has dedicado? ¿Qué material has usado? ¿Sabes que tienes que estimar los costes de amortización del equipo informático que hayas usado? Y en producción, ¿cuanto costaría el *hosting* o los recursos *cloud* que has usado?
 
 
 ## References
