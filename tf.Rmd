@@ -144,9 +144,21 @@ Y una vez que los tests pasen, el proyecto se puede *desplegar* es decir, pasar 
 
 Los tiempos en los que se copiaban ficheros en un zip a un hosting terminaron en los 90; los tiempos en que se descargaba de un repositorio de código y se empezaban a ejecutar cosas escritas en un post-it (o en un documento de instalación) en 2010 más o menos. Conoce y aprende el concepto de despliegue (para lo que te puede venir bien la asignatura [infraestructura virtual](https://jj.github.io/IV)) y ponlo en práctica en tu TF.
 
+En algunos casos, del TF se deduce una biblioteca o módulo. El despliegue en este caso es la publicación en el repositorio de códigos correspondiente, siguiendo las reglas que haya en el mismo. El mejor producto de un TF es que cualquiera pueda descargárselo usando la orden correspondiente en el lenguaje que sea.
+
 ### Costes
 
 Como un proyecto de ingeniería que es, se deben estimar los costes del mismo, en dos vertientes: costes de desarrollo, y costes de producción. ¿Cuanto tiempo has dedicado? ¿Qué material has usado? ¿Sabes que tienes que estimar los costes de amortización del equipo informático que hayas usado? Y en producción, ¿cuanto costaría el *hosting* o los recursos *cloud* que has usado?
+
+Por otro lado, en general vas a resolver un problema de negocio, que puede tener un retorno monetario o simplemente de ahorro de recursos. Esto también se tiene que estimar. Se trata de un proyecto de ingeniería, los costes son muy importantes, y que el estudiante muestre que es consciente de los mismos, mucho más.
+
+### Evitar la "redacción sobre el último verano" y la "teletienda".
+
+Hay dos tipos de memorias de TF que son muy habituales.
+
+* La "redacción sobre el último verano" se limita a contar lo que se ha hecho, de una forma más o menos narrativa. "He implementado una arquitectura cliente-servidor con PHP-MySQL. Esta es la base de datos, este es el PHP que he usado, me ha salido esto. Conclusión: he hecho lo que me pedían". Hay muchos problemas con esto, pero lo principal es que el margen que se deja para el aprendizaje del estudiante es mínimo; y si solamente se han llevado a cabo los pasos que se pedían, no se ha superado ningún reto, no se ha aplicado ninguna técnica interesante, es muy difícil evaluar las habilidades adquiridas en general y con la realización del proyecto. Y proyecto es un viaje, y como se ha explicado en los apartados anteriores, hay que ir explicando lo que uno se encuentra en el viaje y qué caminos toma, y justificar que son los más acertados. Justificar las elecciones es fundamental para entender la aportación de un TF.
+* La "teletienda" deja de lado qué se ha hecho y se centra en el producto final, tratando de vender el producto. Aparte de inspirar presentacioneos insoportables, con pantallazo tras pantallazo (o demos), lo esencial de un TF es cómo se ha resuelto el problema, no qué aparece en la pantalla
+> Simultáneamente, esto hace que se enfoquen los proyectos a algo que puede ser presentado visualmente, en vez de múltiples de soluciones informáticas (APIs, bibliotecas) que no tienen apariencia visual alguna.
 
 
 ## References
