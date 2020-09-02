@@ -136,6 +136,14 @@ No. Se trata de que ya sabes cuales son tus requisitos, de los cuales hemos resa
 
 Y el estado del arte (y diseño) se debe extender a todo, tanto lo que esté en el proyecto como lo que hayas usado; en algunas cosas te lo puedes saltar (por ejemplo, el editor), pero en general, que muestres conocimiento de herramientas de desarrollo, de implementación y de despliegue es lo que se busca en un TF.
 
+### Tests y despliegue
+
+Cuando he hablado de los issues, he dicho implícitamente que todos los issues se debían cerrar con un test; pero es que issues de nivel mayor también tienen que cerrarse con el mismo tipo de test, aunque en este caso serán tests *end to end* o de integración. Afortunadamente, los tests se pueden ejecutar automáticamente, así que no hay que preocuparse por hacerlo a mano cada vez; sí habrá que preocuparse (y ponerlo claramente en el repo) de que los tests pasen.
+
+Y una vez que los tests pasen, el proyecto se puede *desplegar* es decir, pasar a producción en una máquina destinada para ello. Y hoy en día, esa máquina estará en la nube, o si no lo está, de todas formas el proceso de desplegar es uno en el cual se crea el contexto necesario para que se 3ejecute el producto y se comienza a ejecutar, sabiendo claramente qué versión de todos los ficheros se ha desplegado (ya que se ha hecho desde el repositorio), y pudiendo *reproducirlo* fácilmente simplemente volviéndolo a lanzar. En este proceso de despliegue se levantarán todos los servicios, se compilarán, se instalará lo que haga falta. Y necesita programación específica: la infraestructura es código, y se pueden usar múltiples formas de desplegar, desde un simple contenedor Docker hasta una orquestación con Kubernetes, pasando por Terraform, Vagrant, plantillas de instancias en la nube o lo que a uno se le ocurra.
+
+Los tiempos en los que se copiaban ficheros en un zip a un hosting terminaron en los 90; los tiempos en que se descargaba de un repositorio de código y se empezaban a ejecutar cosas escritas en un post-it (o en un documento de instalación) en 2010 más o menos. Conoce y aprende el concepto de despliegue (para lo que te puede venir bien la asignatura [infraestructura virtual](https://jj.github.io/IV)) y ponlo en práctica en tu TF.
+
 
 
 
