@@ -1,5 +1,5 @@
 ---
-title: "Cómo hacer un TFG/TFM en informática"
+title: "Cómo llevar a término un TFG/TFM en informática"
 author: "JJ Merelo"
 date: "1/9/2020"
 output: html_document
@@ -159,6 +159,33 @@ Hay dos tipos de memorias de TF que son muy habituales.
 * La "redacción sobre el último verano" se limita a contar lo que se ha hecho, de una forma más o menos narrativa. "He implementado una arquitectura cliente-servidor con PHP-MySQL. Esta es la base de datos, este es el PHP que he usado, me ha salido esto. Conclusión: he hecho lo que me pedían". Hay muchos problemas con esto, pero lo principal es que el margen que se deja para el aprendizaje del estudiante es mínimo; y si solamente se han llevado a cabo los pasos que se pedían, no se ha superado ningún reto, no se ha aplicado ninguna técnica interesante, es muy difícil evaluar las habilidades adquiridas en general y con la realización del proyecto. Y proyecto es un viaje, y como se ha explicado en los apartados anteriores, hay que ir explicando lo que uno se encuentra en el viaje y qué caminos toma, y justificar que son los más acertados. Justificar las elecciones es fundamental para entender la aportación de un TF.
 * La "teletienda" deja de lado qué se ha hecho y se centra en el producto final, tratando de vender el producto. Aparte de inspirar presentacioneos insoportables, con pantallazo tras pantallazo (o demos), lo esencial de un TF es cómo se ha resuelto el problema, no qué aparece en la pantalla
 > Simultáneamente, esto hace que se enfoquen los proyectos a algo que puede ser presentado visualmente, en vez de múltiples de soluciones informáticas (APIs, bibliotecas) que no tienen apariencia visual alguna.
+
+Hay que tener en cuenta la "naturaleza dual" de la memoria. Por un lado, es una descripción de un proyecto; por otro lado, es el documento que se entrega para evaluar el mismo. Como este último, debe contener todo lo que se haya hecho que sea evaluable, esencialmente todas las decisiones técnicas que se han tomado; como el primero, debe describir el trabajo hecho, pero dirigido hacia personas que quieran continuar con el trabajo o, una vez más, evaluarlo. Pantallazos, decisiones sin explicación, no deben tener cabida en el mismo.
+
+### Análisis de prestaciones
+
+Es muy raro que en un TF aparezca como un requisito funcional un nivel de prestaciones determinado, o requisitos como que el downtime sea menos de una cantidad determinada, o que se tenga que levantar el sistema el un tiempo determinado. Por la misma razón, es muy raro que realmente se analice el nivel de prestaciones que se requiere.
+
+El análisis de prestaciones es todo un arte arcano. Pero las decisiones sobre la arquitectura van a afectar el nivel de prestaciones, y por tanto es esencial establecerlo aunque sea mínimamente, para luego comprobar que efectivamente se cumple. Cosas como el nivel de peticiones simultáneas que es capaz de soportar es esencial conocerlas. Aunque no se prevea una carga masiva, primero, nunca se sabe, segundo, se debe conocer para, en caso de que se alcance, tomar decisiones relativas a la arquitectura (y que estas estén claramente explicadas en la memoria).
+
+
+### Conclusiones de la memoria
+
+Las conclusiones no se deben de limitar a decir lo que se ha hecho, sino a evaluar si las decisiones que se han tomado son las correctas. Un proyecto está afectado por las decisiones que ha tomado, y en el tiempo que se da es imposible volver atrás para rehacer lo hecho. Las conclusiones, por tanto, deben ser una serie de contrafactuales: si hubiera elegido PostgreSQL en vez de MySQL, ¿qué habría podido hacer y qué no? ¿Si hubiera pillado un Arduino en vez de una ESP8266? ¿Si hubiera usado Go en vez de Java?
+
+Lo principal es que esta sección cierre el ciclo de la memoria. Se ha planteado un problema, nos hemos propuesto alcanzar estos objetivos, los hemos alcanzado, hemos resuelto el problema. Fin de la historia. Se puede añadir (o no) una sección de trabajo futuro, pero la verdad es que la relevancia de esta es más bien minúscula.
+
+
+
+## Terminando
+
+Aunque me había propuesto hacer una pequeño artículo sobre este tema, finalmente ha quedado algo más extenso; al menos, me sirve para recoger diversos artículos y recursos para TFs que tenía dispersos por ahí. Si tuviera que resumir en una serie de mantras lo que hace que un TF tenga éxito, sería
+
+1. Libera tu código y memoria desde que empieces a trabajar con el mismo. Usa GitHub/GitLab para organizarte el trabajo e interaccionar con tutor/a.
+2. Deja que los objetivos sean la cúspide de la pirámide, que tendrás que alcanzar al final del trabajo; en la memoria irás escribiendo una crónica de qué es lo que has hecho para alcanzar los objetivos, y los pisos de la pirámide serán los diferentes subobjetivos que has ido alcanzando hasta llegar a la cumbre.
+3. Supera los retos que se te vayan planteando con ayuda del tutor/a, de la comunidad, y documenta lo que has hecho. Deja que el TF sea una herramienta de crecimiento profesional y personal para ti.
+
+El último punto, por supuesto, es lo más importante. Buena suerte.
 
 
 ## References
