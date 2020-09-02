@@ -76,6 +76,8 @@ Por varias razones. Un objetivo siempre tiene que estar en el dominio del proble
 
 Un objetivo *nunca* debe incluir una solución al problema si se alcanza el mismo; es algo que se debe de alcanzar, y justificar, durante el desarrollo de un proyecto. Y nunca debe ser una tarea cerrada. Un TF siempre debe resolver un problema (o parte del mismo), no hacer una tarea.
 
+Los objetivos del proyecto son uno de los apartados más importantes del mismo; en otro artículo [@objetivos] describo cómo formularlos correctamente y qué hace que sean buenos o malos.
+
 ## El TF y la memoria
 
 Un TF es un trabajo, claro, pero se evalúa mediante una memoria, que debemos asumir que van a leer, porque aunque es muy probable que no se lea completa, sí pueden leer (o tratar de leer) precisametne la parte que está mal escrita o la que falta; el tutor sí debe leerse al menos una parte considerable, o la estructura de la misma.
@@ -111,6 +113,8 @@ En la metodología tendrás que incluir (porque se evalúa) como se ha hecho el 
 > Lo que no quiere decir que se use un sólo commit para todo un issue. Puede haber uno o muchos; en el mensaje de commit se puede aclarar cómo se avanza para cerrar ese issue.
 
 Todo el proyecto debe estar bien engarzado: los requisitos deben aparecer en milestones, los issues deben estar bien enmarcados y avanzar un hito concreto, y cada vez que se cierre un hito se puede hacer un release. Pero con todo esto podrás avanzar fácilmente tanto en el proyecto como en la memoria, que al fin y al cabo es la descripción de lo que has hecho en el mismo.
+
+> Habría que dedicar otro artículo completo a issues y commits. Pero basten un par de reglas: los issues deben ser descriptivos del problema que se quiere resolver específicamente con los mismos, o cómo se va a avanzar hacia el hito. Los commits son los que deben decir qué se ha hecho. Todo commit debe referirse a un issue (puede haber (pocas) excepciones), y un issue *siempre* se tiene que cerrar con un commit.
 
 ### Estado del arte y diseño
 
