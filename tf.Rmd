@@ -30,7 +30,7 @@ Como cualquier TF, debemos empezar por el
 
 ## estado del arte
 
-No he encontrado demasiadas guías prácticas sobre cómo afrontar el TF. Hay trabajos, como [@rodriguez2012como], que hacen una panorámica de qué tipo de trabajos recogen los reglamentos de TFG de diferentes universidades. El libro de García Sanz y Martínez Clares [@sanz2012guia] promete ser una guía práctica, pero es quizás demasiado genérico (y extenso) para poder usarse de forma práctica; no está mal, sin embargo, consultarlo antes de ponerse a trabajar. Alier et al. [@alier2012preguntas] proponen una estructuración del trabajo en tres hitos (lo que es un poco escaso para trabajos informáticos) y una serie de preguntas para cada uno de ellos, del estilo de "¿Existe una planificación del trabajo a realizar?". Puede ayudar sobre todo al tutor, pero desde luego no ayuda al estudiante a hacer dicha planificación o cómo enfocarla. Por último, la guía práctica de Monferrer y otros [@monferrer2012trabajo] puede ayudar a centrar el desarrollo inicial de un trabajo, pero es un poco demasiado genérica para ser de ayuda a estudiantes de informática. 
+No he encontrado demasiadas guías prácticas sobre cómo afrontar el TF. Hay trabajos, como [@rodriguez2012como], que hacen una panorámica de qué tipo de trabajos recogen los reglamentos de TFG de diferentes universidades. El libro de García Sanz y Martínez Clares [@sanz2012guia] promete ser una guía práctica, pero es quizás demasiado genérico (y extenso) para poder usarse de forma práctica; no está mal, sin embargo, consultarlo antes de ponerse a trabajar. Alier et al. [@alier2012preguntas] proponen una estructuración del trabajo en tres hitos (lo que es un poco escaso para trabajos informáticos) y una serie de preguntas para cada uno de ellos, del estilo de "¿Existe una planificación del trabajo a realizar?". Puede ayudar sobre todo al tutor, pero desde luego no ayuda al estudiante a hacer dicha planificación o cómo enfocarla. Por último, la guía práctica de Monferrer y otros [@monferrer2012trabajo] puede ayudar a centrar el desarrollo inicial de un trabajo, pero es un poco demasiado genérica para ser de ayuda a estudiantes de informática. En [@revisiontfg], por otro lado, se hace una revisión, no del todo formal, de lo que significa la elaboración de un trabajo fin de grado en ingeniería y el acto de presentación del mismo.
 
 El problema, muchas veces, es que el estudiante realmente no tiene conocimientos (porque su grado no se ha molestado en impartírselo) para *tener* un proyecto y llevarlo a cabo. Así que vamos al principio, qué es un proyecto y cómo plantearlo.
 
@@ -50,7 +50,7 @@ Y no lo es principalmente porque no dice qué problema va a resolver.
 
 Saber qué problema se va a resolver es esencial. Del problema surge la motivación, pero también los casos de uso, es decir, las diferentes situaciones en las que diferentes tipos de usuarios interaccionarán con la solución propuesta para resolver, en ese caso, su problema. En el primer caso, las posibles aplicaciones o el problema que uno tenga en mente serán casos de uso, y de esa forma se tendrán que crear, adicionalmente, lógica de negocio para presentar esa información, o para almacenarla y procesarla. En el segundo caso no hay casos de uso. Se construye el dispositivo. Capta las MACs. Ya está. ¿Dónde se guardan esas MAC? ¿Se tienen que guardar o no?
 
-En esto de puede ayudar la técnica del Design Thinking [@steinbeck2011design]. Recuerda que siempre es mejor, y va a ser para ti más interesante, que resuelvas *tu* problema que el que te lleguen con una solución ya hecha que ni siquiera se te haya ocurrido a ti. A partir de aquí, ya puedes pasar a la siguiente fase.
+En esto de puede ayudar la técnica del Design Thinking [@steinbeck2011design,@revisiondesignthinking]. Recuerda que siempre es mejor, y va a ser para ti más interesante, que resuelvas *tu* problema que el que te lleguen con una solución ya hecha que ni siquiera se te haya ocurrido a ti. A partir de aquí, ya puedes pasar a la siguiente fase.
 
 ## Objetivos de un TF
 
@@ -177,7 +177,6 @@ El análisis de prestaciones es todo un arte arcano. Pero las decisiones sobre l
 Las conclusiones no se deben de limitar a decir lo que se ha hecho, sino a evaluar si las decisiones que se han tomado son las correctas. Un proyecto está afectado por las decisiones que ha tomado, y en el tiempo que se da es imposible volver atrás para rehacer lo hecho. Las conclusiones, por tanto, deben ser una serie de contrafactuales: si hubiera elegido PostgreSQL en vez de MySQL, ¿qué habría podido hacer y qué no? ¿Si hubiera pillado un Arduino en vez de una ESP8266? ¿Si hubiera usado Go en vez de Java?
 
 Lo principal es que esta sección cierre el ciclo de la memoria. Se ha planteado un problema, nos hemos propuesto alcanzar estos objetivos, los hemos alcanzado, hemos resuelto el problema. Fin de la historia. Se puede añadir (o no) una sección de trabajo futuro, pero la verdad es que la relevancia de esta es más bien minúscula.
-
 
 
 ## Terminando
