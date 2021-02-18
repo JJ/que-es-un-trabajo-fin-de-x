@@ -418,17 +418,24 @@ summary {
 </ul></li>
 </ul>
 <p>En el primer caso, va a ser totalmente diferente la solución dependiendo de la dimensión del recinto; el segundo nos va a dar un límite en la capacidad de procesamiento del sistema. Que en este caso es amplia, pero puede ser de 1 segundo, en cuyo caso habrá que componérselas.</p>
-<p><strong>No</strong> será un objetivo * Construir un dispositivo basado en una raspberry pi que capte WiFi y Bluetooth</p>
+<p><strong>No</strong> será un objetivo, por ejemplo</p>
+<ul>
+<li>Construir un dispositivo basado en una Raspberry Pi que capte WiFi y Bluetooth</li>
+</ul>
 <p>Por varias razones. Un objetivo siempre tiene que estar en el dominio del problema, o en un contexto de negocio. Si el problema, por ejemplo, es automatizar los procesos de desarrollo de una empresa que provee soluciones de gestión de contenidos, un objetivo podrá ser “Crear configuraciones repetibles que funcionen con una sola orden” o “reducir el tiempo de despliegue de desarrollo a 5 minutos” o “Poder adaptar soluciones existentes a una nueva solución con una semana-persona”. El objetivo <strong>no será nunca</strong></p>
 <ul>
-<li>Desarrollar un script de ansible que instale todas las aplicaciones que usamos ahora.</li>
+<li>Desarrollar un script de <code>ansible</code> que instale todas las aplicaciones que usamos ahora.</li>
 </ul>
-<p>Un objetivo <em>nunca</em> debe incluir una solución al problema si se alcanza el mismo; es algo que se debe de alcanzar, y justificar, durante el desarrollo de un proyecto. Y nunca debe ser una tarea cerrada. Un TF siempre debe resolver un problema (o parte del mismo), no hacer una tarea.</p>
-<p>Los objetivos del proyecto son uno de los apartados más importantes del mismo; en otro artículo <span class="citation">(Merelo 2019)</span> describo cómo formularlos correctamente y qué hace que sean buenos o malos.</p>
+<p>Un objetivo <em>nunca</em> debe formularse como una solución específica a un problema; es algo que se debe de alcanzar, y justificar, durante el desarrollo de un proyecto. Y nunca debe ser una tarea cerrada. Un TF siempre debe resolver un problema (o parte del mismo), no hacer una tarea.</p>
+<p>Los objetivos del proyecto son uno de los apartados más importantes del mismo;</p>
+<blockquote>
+<p>Entre otras cosas porque, estando al principio, es el contenido que con casi toda probabilidad se leerán en el tribunal.</p>
+</blockquote>
+<p>en otro artículo <span class="citation">(Merelo 2019)</span> describo cómo formularlos correctamente y qué hace que sean buenos o malos.</p>
 </div>
 <div id="el-tf-y-la-memoria" class="section level2">
 <h2>El TF y la memoria</h2>
-<p>Un TF es un trabajo, claro, pero se evalúa mediante una memoria, que debemos asumir que van a leer, porque aunque es muy probable que no se lea completa, sí pueden leer (o tratar de leer) precisamente la parte que está mal escrita o la que falta; el tutor sí debe leerse al menos una parte considerable, o la estructura de la misma.</p>
+<p>Un TF es un trabajo, claro, pero se evalúa mediante una memoria (sobre todo la presentación, pero tiene que haber memoria), que debemos asumir que van a leer, porque aunque es muy probable que no se lea completa, sí pueden leer (o tratar de leer) precisamente la parte que está mal escrita o la que falta; el tutor sí debe leerse al menos una parte considerable, o la estructura de la misma.</p>
 <blockquote>
 <p>Ojo: no se debe pretender, en general, que el tutor se la lea y corrija los puntos y comas, y menos si se presenta completa unos días antes de la presentación. En general, el tutor establecerá líneas generales u objectivos que la memoria debe cumplir (no tener faltas de ortografía, por ejemplo); quien la escriba debe asegurarse de que se cumplen.</p>
 </blockquote>
@@ -450,7 +457,7 @@ summary {
 <h3>Metodología</h3>
 <p>Una vez que sepas, aunque sea inicialmente, qué vas a hacer, necesitas ponerte, efectivamente, a hacerlo. Puede que no tengas todos los requisitos al principio, pero al menos tendrás los primeros o sabrás por dónde tienes que empezar. Hoy en día la mayoría de los proyectos usan metodologías ágiles basadas en SCRUM. Te pillas una historia de usuario, y la conviertes en una serie de hitos (o <em>milestones</em>) que hay que ir alcanzando antes de tener la historia de usuario completa. Por ejemplo, vamos al proyecto anterior. Una historia de usuario puede ser algo como “El usuario debe de recibir información sobre las personas que hay en el recinto de su interés”.</p>
 <blockquote>
-<p>La historia de usuario es expresamente vaga. Si dices “voy a crear una página web que tenga el número de personas en el recinto” excluyes muchas formas posibles de interacción, desde un bot de Telegram (al que se le pregunte) hasta enviarlo a una cuenta de Twitter. Por eso los objetivos no deben ser nunca el producto que vas a desarrollar; es algo que tiene que decidirse en función de los requisitos funcionales (y de otro tipo)</p>
+<p>La historia de usuario es expresamente vaga. Si dices “voy a crear una página web que muestre el número de personas en el recinto” excluyes muchas formas posibles de interacción, desde un bot de Telegram (al que se le pregunte) hasta enviarlo a una cuenta de Twitter. Otra razón por la que los objetivos no deben ser nunca el producto que vas a desarrollar; es algo que tiene que decidirse en función de los requisitos funcionales (y de otro tipo).</p>
 </blockquote>
 <p>De ahí saldrán un montón de productos intermedios. Pero en la parte más bajas de los mismos tendrá que estar el hito de “Captar los paquetes BT y almacenarlos transitoriamente en una estructura de datos”. Ese puede ser el hito inicial. Un hito tiene que describir un producto concreto, un producto mínimamente viable sobre el que se pueda construir. En este caso, una clase o módulo que se conecte con el hardware (que se habrá decidido o elegido en otro hito) y tenga un API del que se pueda obtener ese resultado.</p>
 <blockquote>
@@ -458,7 +465,7 @@ summary {
 </blockquote>
 <p>En cualquier caso, hay que hacer un <em>sprint</em> para llevar a cabo el hito, y durante el mismo, tomar una serie de decisiones sobre el diseño, bibliotecas externas que se van a usar, etcétera. Todo debe ir bien anotado (los mensajes de commit pueden servir para eso), porque nos va a servir en el siguiente capítulo.</p>
 <p>Por otro lado, es imprescindible que uses git para desarrollar el proyecto; por un lado, porque es lo que se usa en la empresa, por otro lado, porque te permitirá documentar en línea el código, y referirte a issues y demás. Y porque GitHub o GitLab son verdaderos sitios de trabajo en grupo, donde puedes (si el tutor/a quiere) interaccionar con el resto de las personas implicadas; puedes solicitar reviews de lo|as tutore|as o ellos te pueden poner issues para que corrijas algún aspecto del mismo. Estos issues pueden estar fuera de un hito, pero tú puedes añadirlos al mismo (o crear uno que sea producto final o algo así). El hecho de que esté en un issue te permitirá controlar más fácilmente la interacción y consecución del mismo.</p>
-<p>En la metodología tendrás que incluir (porque se evalúa) como se ha hecho el control de calidad del producto. En general, debes usar tests desde abajo (funcionales) hasta arriba (integración, y todos los issues se deben cerrar con un test que permita asegurarse de que ese issue no va a volver a aparecer; una vez terminado código + tests se cierra el issue desde un commit.</p>
+<p>En la metodología tendrás que incluir (porque se evalúa, o al menos debería evaluarse) como se ha hecho el control de calidad del producto. En general, debes usar tests desde abajo (funcionales) hasta arriba (integración, y todos los issues se deben cerrar con un test que permita asegurarse de que ese issue no va a volver a aparecer; una vez terminado código + tests se cierra el issue desde un commit.</p>
 <blockquote>
 <p>Lo que no quiere decir que se use un sólo commit para todo un issue. Puede haber uno o muchos; en el mensaje de commit se puede aclarar cómo se avanza para cerrar ese issue.</p>
 </blockquote>
@@ -494,8 +501,8 @@ summary {
 <h3>Evitar la “redacción sobre el último verano” y la “teletienda”.</h3>
 <p>Hay dos tipos de memorias de TF que son muy habituales.</p>
 <ul>
-<li>La “redacción sobre el último verano” se limita a contar lo que se ha hecho, de una forma más o menos narrativa. “He implementado una arquitectura cliente-servidor con PHP-MySQL. Esta es la base de datos, este es el PHP que he usado, me ha salido esto. Conclusión: he hecho lo que me pedían”. Hay muchos problemas con esto, pero lo principal es que el margen que se deja para el aprendizaje del estudiante es mínimo; y si solamente se han llevado a cabo los pasos que se pedían, no se ha superado ningún reto, no se ha aplicado ninguna técnica interesante, es muy difícil evaluar las habilidades adquiridas en general y con la realización del proyecto. El proyecto es un viaje, y como se ha explicado en los apartados anteriores, hay que ir explicando lo que uno se encuentra en el viaje y qué caminos toma, y justificar que son los más acertados. Justificar las elecciones es fundamental para entender la aportación de un TF.</li>
-<li>La “teletienda” deja de lado qué se ha hecho y se centra en el producto final, tratando de vender el producto. Aparte de inspirar presentacioneos insoportables, con pantallazo tras pantallazo (o demos), lo esencial de un TF es cómo se ha resuelto el problema, no qué aparece en la pantalla &gt; Simultáneamente, esto hace que se enfoquen los proyectos a algo que puede ser presentado visualmente, en vez de múltiples de soluciones informáticas (APIs, bibliotecas) que no tienen apariencia visual alguna.</li>
+<li>La “redacción sobre el último verano” se limita a contar lo que se ha hecho, de una forma más o menos narrativa. “He implementado una arquitectura cliente-servidor con PHP-MySQL. Esta es la base de datos, este es el PHP que he usado, me ha salido esto. Conclusión: he hecho lo que me pedían”. Hay muchos problemas con este tipo de exposición, pero lo principal es que el margen que se deja para el aprendizaje del estudiante es mínimo; y si solamente se han llevado a cabo los pasos que se pedían, no se ha superado ningún reto, no se ha aplicado ninguna técnica interesante, es muy difícil evaluar las habilidades adquiridas en general y con la realización del proyecto. El proyecto es un viaje, y como se ha explicado en los apartados anteriores, hay que ir explicando lo que uno se encuentra en el viaje y qué caminos toma, y justificar que son los más acertados. Justificar las elecciones es fundamental para entender la aportación de un TF.</li>
+<li>La “teletienda” deja de lado qué se ha hecho y se centra en el producto final, tratando de venderlo. Aparte de inspirar presentacioneos insoportables, con pantallazo tras pantallazo (o demos), lo esencial de un TF es cómo se ha resuelto el problema, no qué aparece en la pantalla &gt; Simultáneamente, esto hace que se enfoquen los proyectos a algo que puede ser presentado visualmente, en vez de múltiples soluciones informáticas (APIs, bibliotecas) que no tienen apariencia visual alguna.</li>
 </ul>
 <p>Hay que tener en cuenta la “naturaleza dual” de la memoria. Por un lado, es una descripción de un proyecto; por otro lado, es el documento que se entrega para evaluar el mismo. Como este último, debe contener todo lo que se haya hecho que sea evaluable, esencialmente todas las decisiones técnicas que se han tomado; como el primero, debe describir el trabajo hecho, pero dirigido hacia personas que quieran continuar con el trabajo o, una vez más, evaluarlo. Pantallazos, decisiones sin explicación, no deben tener cabida en el mismo.</p>
 </div>
