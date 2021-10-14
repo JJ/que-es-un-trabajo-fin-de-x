@@ -3,9 +3,9 @@ title: "Cómo llevar a término un TFG/TFM en informática"
 author: "JJ Merelo"
 date: "14/10/2020"
 output:
+  html_document: default
   pdf_document:
     latex_engine: xelatex
-  html_document: default
 bibliography: TF.bib
 ---
 
